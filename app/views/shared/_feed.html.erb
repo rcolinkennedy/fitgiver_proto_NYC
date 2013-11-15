@@ -1,0 +1,29 @@
+<% @feed_entries.each do |entry| %>
+    <% if entry.class == Achievement %>
+      <div class="row">
+        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]" /></div>
+        <div class="large-10 columns">
+          <p><strong><%= entry.username %></strong> <%= entry.title %></p>
+          <ul class="inline-list">
+            <li><a href="">Reply</a></li>
+            <li><a href="">Share</a></li>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+
+    <% if entry.class == Donation %>
+      <div class="row">
+        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]" /></div>
+        <div class="large-10 columns">
+          <p><strong><%= entry.username %></strong> Donation: <%= entry.title %></p>
+          <ul class="inline-list">
+            <li><a href="">Reply</a></li>
+            <li><a href="">Share</a></li>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+
+
+<% end %>
