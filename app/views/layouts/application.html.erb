@@ -14,9 +14,13 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
-
+	
+	
   	<%= stylesheet_link_tag    "application" %>
+  	<%= stylesheet_link_tag    "heroku" %>
+  	<%= stylesheet_link_tag    "transition" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
+  	<%= javascript_include_tag "chart" %>
     <%= csrf_meta_tags %>
   </head>
 
