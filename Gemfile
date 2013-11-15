@@ -57,6 +57,9 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.8'
 
+  # Use Nifty Generators
+  # More info at https://github.com/ryanb/nifty-generators
+  gem 'nifty-generators'
   # Add RSpec for rails
   gem 'rspec-rails', '2.13.1'
 
@@ -86,3 +89,5 @@ group :production do
   #Enables serving assets in production and setting your logger to standard out
   gem 'rails_12factor', '0.0.2'
 end
+
+gem "mocha", group: :test
