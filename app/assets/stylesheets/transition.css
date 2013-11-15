@@ -57,3 +57,13 @@ div.ui-btn-text.pnlBtnMain {
     height: auto;
 }
 
+body{
+background: #131313;
+background: -moz-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #131313), color-stop(10%, #093332), color-stop(100%, #23cdcb));
+background: -webkit-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
+background: -o-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
+background: -ms-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
+background: linear-gradient(to bottom, #131313 0%, #093332 10%, #23cdcb 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#23cdcb', GradientType=0 );}
+
