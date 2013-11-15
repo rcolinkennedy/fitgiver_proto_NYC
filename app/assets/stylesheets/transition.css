@@ -67,3 +67,30 @@ background: -ms-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
 background: linear-gradient(to bottom, #131313 0%, #093332 10%, #23cdcb 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#23cdcb', GradientType=0 );}
 
+.profileimg
+{
+    padding:0px !important:
+}
+
+.timeago, .points
+{
+color: rgb(24, 124, 121); 
+font-size: 11px;
+}
+
+.comment_count
+{
+	float:right;
+	background-color:rgba(0, 0, 0, 0.498039);
+  background-position:initial initial;
+  background-repeat:initial initial;
+  color:white;
+  font-size:11px;
+  margin-bottom:5px;
+  margin-top:5px;
+  padding:5px;
+  text-shadow:none;
+  //width:41px;
+  direction:ltr;
+  
+}

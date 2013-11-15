@@ -3,11 +3,17 @@
     <% if entry.class == Achievement %>
 
         <div class="row">
+        	<div style="display:inline;">
+				<span style="display:inline;" class="comment_count"><%= image_tag "chatIcon.png" %> 5,345</span>
+			</div>
             <div class="large-2 columns small-3"><%= image_tag "ArtistPic300x300.jpg" , :class => "circleWrap"%></div>
             <div class="large-10 columns">
-              <p><strong class="name"><%= entry.username %>'s</strong><div class="achievement"><%= entry.title %>, <%= entry.message %></div></p>
+              <p><strong class="name" style="display:inline"><%= entry.username %>'s</strong><div class="achievement"><%= entry.title %>, <%= entry.message %></div></p>
+              <p><div style="display:inline" class="points"><%= entry.points %> pts  |  </div><div class="timeago" style="display:inline;"><%= entry.time_ago %></div></p>
             </div>
+            
         </div>
+        
         <hr />
 <!-- 
       <div class="row">
