@@ -30,11 +30,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :assets do
-  # Use Zurb Foundation for front end framework
-  gem 'compass-rails'
-  gem 'zurb-foundation', '3.2.5'
-end
+
+
+  # Add Foundation Here
+  gem 'compass-rails' # you need this or you get an err
+  gem 'zurb-foundation', '~> 4.0.0'
+
+
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '3.1.2'
@@ -79,7 +81,7 @@ end
 #add prod group
 group :production do
   # Use PostgreSQL for deployment to Heroku
-  gem 'pg', '~>0.17.0' 
+  gem 'pg', '~>0.17.0'
 
   #Enables serving assets in production and setting your logger to standard out
   gem 'rails_12factor', '0.0.2'
