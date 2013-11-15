@@ -30,6 +30,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :assets do
+  # Use Zurb Foundation for front end framework
+  gem 'compass-rails'
+  gem 'zurb-foundation', '3.2.5'
+end
+
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '3.1.2'
 
@@ -41,6 +47,8 @@ gem 'bcrypt-ruby', '3.1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
 
 # Set up dev group
 group :development, :test do
