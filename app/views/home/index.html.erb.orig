@@ -25,43 +25,43 @@
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
     <div class="large-9 push-3 columns">
 <<<<<<< HEAD
-        
-        <%= render "shared/feed" %>
+	   <%= render "shared/feed" %>
 =======
 
       <!-- Feed Entry -->
       <div class="row">
         <div class="large-2 columns small-3"><%= image_tag "ArtistPic300x300.jpg" , :class => "circleWrap"%></div>
         <div class="large-10 columns">
-          <p><strong class="name">Salina's</strong><div class="achievement">Trifecta: bike + run + steps goal, You worked hard!</div></p>
+          <p><strong >Salina's <div class="achievement" style="display:inline !important;">Trifecta: bike + run + steps goal, You worked hard!</div></p>
         </div>
       </div>
       <!-- End Feed Entry -->
 
       <hr />
 
+     <!-- Feed Entry -->
+      <div class="row">
+        <div class="large-2 columns small-3"><%= image_tag "ArtistPic300x300.jpg" , :class => "circleWrap"%></div>
+        <div class="large-10 columns">
+          <p><strong >Salina's <div class="achievement" style="display:inline !important;">Trifecta: bike + run + steps goal, You worked hard!</div></p>
+        </div>
+      </div>
+      <!-- End Feed Entry -->
+
+      <hr />
+      
       <!-- Feed Entry -->
       <div class="row">
-        <div class="large-2 columns small-3"><%= image_tag "ArtistPic300x300.jpg" , :class => "feed_image_wrapper"%></div>
+        <div class="large-2 columns small-3"><%= image_tag "ArtistPic300x300.jpg" , :class => "circleWrap"%></div>
         <div class="large-10 columns">
-          <p><strong class="name">Salina's</strong><div class="achievement">Trifecta: bike + run + steps goal, You worked hard!</div></p>
+          <p><strong >Salina's <div class="achievement" style="display:inline !important;">Trifecta: bike + run + steps goal, You worked hard!</div></p>
         </div>
       </div>
       <!-- End Feed Entry -->
 
       <hr />
-      <!-- Feed Entry -->
-      <div class="row">
-        <div class="large-2 columns small-3"><%= image_tag "ArtistPic300x300.jpg" , :class => "feed_image_wrapper"%></div>
-        <div class="large-10 columns">
-          <p><strong class="name">Salina's</strong><div class="achievement">Trifecta: bike + run + steps goal, You worked hard!</div></p>
-        </div>
-      </div>
-      <!-- End Feed Entry -->
->>>>>>> 6e3a9fadbbbf0315858848d7983244674b996881
 
-      <hr />
-
+>>>>>>> 80f6aa288b4206614685dce9cca99652dd2c2c2a
     </div>
     
     
@@ -84,10 +84,10 @@
   
   <footer class="row">
     <div class="large-12 columns">
-      <hr />
+      <!--<hr />-->
       <div class="row">
         <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
+          <p>&copy; FitGiver 2013</p>
         </div>
         <div class="large-6 columns">
           <!--<ul class="inline-list right">
