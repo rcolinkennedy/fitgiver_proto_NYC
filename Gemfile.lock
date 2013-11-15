@@ -106,10 +106,13 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metaclass (0.0.1)
     method_source (0.8.2)
     mime-types (1.25)
     mini_portile (0.5.2)
     minitest (4.7.5)
+    mocha (0.14.0)
+      metaclass (~> 0.0.1)
     multi_json (1.8.2)
     multipart-post (1.2.0)
     nifty-generators (0.4.6)
@@ -131,6 +134,8 @@ GEM
     pg (0.17.0)
     pg (0.17.0-x86-mingw32)
     polyglot (0.3.3)
+    protected_attributes (1.0.5)
+      activemodel (>= 4.0.1, < 5.0)
     pry (0.9.12.3)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -260,9 +265,11 @@ DEPENDENCIES
   guard-spork (= 1.5.0)
   jbuilder (~> 1.2)
   jquery-rails
+  mocha
   nifty-generators
   omniauth-twitter
   pg (~> 0.17.0)
+  protected_attributes
   rails (= 4.0.1)
   rails_12factor (= 0.0.2)
   rspec-rails (= 2.13.1)

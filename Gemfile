@@ -37,6 +37,8 @@ gem 'devise'
 gem 'omniauth-twitter'
 #gem 'omniauth-runkeeper'
 gem 'twitter'
+# Fix Devise to work with Rails 4.0+
+gem 'protected_attributes'
 
 # Use unicorn as the app server
 # gem 'unicorn'
