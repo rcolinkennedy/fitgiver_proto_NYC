@@ -32,6 +32,12 @@ gem 'zurb-foundation', '~> 4.0.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '3.1.2'
 
+# Implement Devise with OmniAuth for Users and Authentication
+gem 'devise'
+gem 'omniauth-twitter'
+#gem 'omniauth-runkeeper'
+gem 'twitter'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
