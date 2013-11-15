@@ -1,0 +1,59 @@
+div.large-3.pull-9.columns {
+    color: #414141;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+body
+{
+background-color:black;
+}
+
+.name
+{
+font-weight:bold;
+  line-height:inherit;
+  color:rgba(0, 0, 0, 0.498039);
+font-family:inherit;
+  font-size:14px;
+  direction:ltr;
+  text-align:left;
+  text-shadow:none;
+  
+}
+
+.achievement
+{
+font-weight:bold;
+  line-height:inherit;
+  color:white;
+  font-family:inherit;
+  font-size:14px;
+  direction:ltr;
+  text-align:left;
+  text-shadow:none;
+}
+
+
+.feed_image_wrapper
+{
+border-bottom-left-radius:50em;
+  border-bottom-right-radius:50em;
+  border-top-left-radius:50em;
+  border-top-right-radius:50em;
+  //width:40px !important;
+  height:auto;
+  direction:ltr;
+  font-size:14px;
+  
+}
+
+img.circleWrapSm.icn.panelIcon {
+    min-height: 30px;
+    min-width: 30px;
+}
+
+div.ui-btn-text.pnlBtnMain {
+    height: auto;
+}
+

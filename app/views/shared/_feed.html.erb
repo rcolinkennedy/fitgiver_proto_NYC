@@ -1,5 +1,15 @@
 <% @feed_entries.each do |entry| %>
+    
     <% if entry.class == Achievement %>
+
+        <div class="row">
+            <div class="large-2 columns small-3"><%= image_tag "ArtistPic300x300.jpg" , :class => "circleWrap"%></div>
+            <div class="large-10 columns">
+              <p><strong class="name"><%= entry.username %>'s</strong><div class="achievement"><%= entry.title %>, <%= entry.message %></div></p>
+            </div>
+        </div>
+        <hr />
+<!-- 
       <div class="row">
         <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]" /></div>
         <div class="large-10 columns">
@@ -9,11 +19,11 @@
             <li><a href="">Share</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
     <% end %>
 
     <% if entry.class == Donation %>
-      <div class="row">
+      <!-- <div class="row">
         <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]" /></div>
         <div class="large-10 columns">
           <p><strong><%= entry.username %></strong> Donation: <%= entry.title %></p>
@@ -22,7 +32,7 @@
             <li><a href="">Share</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
     <% end %>
 
 
