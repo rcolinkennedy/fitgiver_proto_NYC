@@ -67,14 +67,13 @@ background: -ms-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
 background: linear-gradient(to bottom, #131313 0%, #093332 10%, #23cdcb 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#23cdcb', GradientType=0 );}
 
-.profileimg
-{
-    padding:0px !important:
+img.circleWrapSm.icn.panelIcon.profileimg {
+    padding: 0px;
 }
 
 .timeago, .points
 {
-color: rgb(24, 124, 121); 
+color: rgb(60,179,113); 
 font-size: 11px;
 }
 
@@ -93,4 +92,25 @@ font-size: 11px;
   //width:41px;
   direction:ltr;
   
+}
+
+.inline
+{
+display:inline;
+}
+
+
+@media only screen 
+and (min-width : 600px) {
+/* Styles */
+.hidebig{display:none;}
+}
+
+@media only screen 
+and (max-width : 600px) {
+/* Styles */
+.hidesmall
+{	display:none;	}
+
+
 }
