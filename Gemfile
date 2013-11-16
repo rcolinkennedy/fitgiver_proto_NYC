@@ -48,7 +48,7 @@ gem 'omniauth-twitter'
 #gem 'omniauth-runkeeper'
 gem 'twitter'
 # Fix Devise to work with Rails 4.0+
-gem 'protected_attributes'
+#gem 'protected_attributes'
 # Use figaro to stash keys for dev and deployment
 gem 'figaro', '~> 0.7.0'
 
