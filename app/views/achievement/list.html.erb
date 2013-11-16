@@ -1,0 +1,11 @@
+<h1>Achievement#list</h1>
+<p>Find me in app/views/achievement/list.html.erb</p>
+<%=@ach.title%>
+<%@achievements.each do | a | %>
+
+    <%=a.title%><br/>
+    <%=a.message%><br/>
+    <%=a.comments_count%>
+<%end%>
+
+
