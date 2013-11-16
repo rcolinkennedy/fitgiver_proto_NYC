@@ -1,0 +1,33 @@
+<% @feed_entries.each do |entry| %>
+    
+    <% if entry.class == Achievement %>
+
+        <div class="row">
+        	<a href="<%= entry.url %>">
+        	<div style="display:inline;">
+				<span style="display:inline;" class="comment_count"><%= image_tag "chatIcon.png" %> <%= entry.comments_count %></span>
+			</div>
+			</a>
+            <div class="large-2 columns small-3"><a href="<%= entry.profile_url %>"><%= image_tag "ArtistPic300x300.jpg" , :class => "circleWrap"%></a></div>
+            <div class="large-10 columns">
+              <a href="<%= entry.url %>"><p><strong class="name" style="display:inline"><%= entry.username %>'s</strong><div class="achievement"><%= entry.title %>, <%= entry.message %></div></p>
+              <p><div style="display:inline" class="points"><%= entry.points %> pts  |  </div><div class="timeago" style="display:inline;"><%= entry.time_ago %></div></p>
+              </a>
+            </div>
+            
+        </div>
+        
+        <hr />
+<!-- 
+      <div class="row">
+        <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]" /></div>
+        <div class="large-10 columns">
+          <p><strong><%= entry.username %></strong> <%= entry.title %></p>
+          <ul class="inline-list">
+            <li><a href="">Reply</a></li>
+            <li><a href="">Share</a></li>
+          </ul>
+        </div>
+      </div> -->
+    <% end %>
+<% end %>

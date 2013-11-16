@@ -1,0 +1,116 @@
+div.large-3.pull-9.columns {
+    color: #414141;
+    background-color: #414141;
+    border-radius: 5px;
+}
+
+body
+{
+background-color:black;
+}
+
+.name
+{
+font-weight:bold;
+  line-height:inherit;
+  color:rgba(0, 0, 0, 0.498039);
+font-family:inherit;
+  font-size:14px;
+  direction:ltr;
+  text-align:left;
+  text-shadow:none;
+  
+}
+
+.achievement
+{
+font-weight:bold;
+  line-height:inherit;
+  color:white;
+  font-family:inherit;
+  font-size:14px;
+  direction:ltr;
+  text-align:left;
+  text-shadow:none;
+}
+
+
+.feed_image_wrapper
+{
+border-bottom-left-radius:50em;
+  border-bottom-right-radius:50em;
+  border-top-left-radius:50em;
+  border-top-right-radius:50em;
+  //width:40px !important;
+  height:auto;
+  direction:ltr;
+  font-size:14px;
+  
+}
+
+img.circleWrapSm.icn.panelIcon {
+    min-height: 30px;
+    min-width: 30px;
+}
+
+div.ui-btn-text.pnlBtnMain {
+    height: auto;
+}
+
+body{
+background: #131313;
+background: -moz-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #131313), color-stop(10%, #093332), color-stop(100%, #23cdcb));
+background: -webkit-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
+background: -o-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
+background: -ms-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
+background: linear-gradient(to bottom, #131313 0%, #093332 10%, #23cdcb 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#23cdcb', GradientType=0 );}
+
+img.circleWrapSm.icn.panelIcon.profileimg {
+    padding: 0px;
+}
+
+.timeago, .points
+{
+color: rgb(60,179,113); 
+font-size: 11px;
+}
+
+.comment_count
+{
+	float:right;
+	background-color:rgba(0, 0, 0, 0.498039);
+  background-position:initial initial;
+  background-repeat:initial initial;
+  color:white;
+  font-size:11px;
+  margin-bottom:5px;
+  margin-top:5px;
+  padding:5px;
+  text-shadow:none;
+  //width:41px;
+  direction:ltr;
+  
+}
+
+.inline
+{
+display:inline;
+}
+
+
+@media only screen 
+and (min-width : 600px) {
+/* Styles */
+.hidebig{display:none;}
+}
+
+@media only screen 
+and (max-width : 600px) {
+/* Styles */
+.hidesmall
+{	display:none;	}
+
+
+}

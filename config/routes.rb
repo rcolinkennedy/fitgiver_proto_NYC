@@ -1,5 +1,12 @@
 FitgiverProto::Application.routes.draw do
-  resources :activities
+  get "home/index"
+
+  resources :authentications
+  
+  devise_for :users, path_names: {sign_in: "login"},
+    controllers: {omniauth_callbacks: "authentications", registrations: "registrations"}
+
+  root to: 'authentications#signin'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
