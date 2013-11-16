@@ -1,4 +1,5 @@
 FitgiverProto::Application.routes.draw do
+  get "achievement/list"
   get "home/index"
 
   resources :authentications
