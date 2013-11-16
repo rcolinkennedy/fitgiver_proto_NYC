@@ -15,6 +15,7 @@ namespace :db do
         u = Activity.new(
             :desc => Faker::Name.first_name
         )
+        Faker::Commerce
         u.save!
 
       end
@@ -29,10 +30,7 @@ namespace :db do
           o.title = Faker::Company.catch_phrase
           o.username  = Faker::Internet.user_name
         end
-
-
-        obj.save
-
+        obj.save!
       end
     end
 end
