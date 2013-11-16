@@ -150,6 +150,12 @@ and (max-width : 600px) {
 .hidesmall
 {	display:none;	}
 
+.centersmall
+{
+	left:30%;
+	position:absolute;
+}
+
 #navbar
 {
 	position:fixed;
