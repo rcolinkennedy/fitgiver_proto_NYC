@@ -25,8 +25,7 @@
 #         @time_ago = time_ago
 #     end
 # end
-
-
+    
 class HomeController < ApplicationController
   def index
     @feed_entries = Achievement.all
