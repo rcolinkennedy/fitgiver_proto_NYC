@@ -4,7 +4,7 @@
   
   <div id="header" class="row">
     <div class="large-3 columns">
-      <h1><%= image_tag "fitgiver.png" %></h1>
+      <h1><a href="#main-navigation"><%= image_tag "menu.png" , class:"hidebig" %></a><%= image_tag "fitgiver.png" , class:"hidesmall" %></h1>
     </div>
     <div class="large-9 columns">
       <!--<ul class="inline-list right">
@@ -30,15 +30,15 @@
     
     <!-- Nav Sidebar -->
     <!-- This is source ordered to be pulled to the left on larger screens -->
-    <div class="large-3 pull-9 columns">
-        
-      <ul class="side-nav">
-        <%= render "shared/menu" %>
-      </ul>
+    	<nav id="main-navigation" class="navigation">
+    	<div class="large-3 pull-9 columns">
+      	<ul class="side-nav">
+        	<%= render "shared/menu" %>
+      	</ul>
       
-      <!--<p><img src="http://placehold.it/320x240&text=Ad" /></p>-->
-        
-    </div>
+      	<!--<p><img src="http://placehold.it/320x240&text=Ad" /></p>-->
+    	</div>
+    	</nav>
     
   </div>
     
