@@ -25,21 +25,22 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
-
-
-
-  # Add Foundation Here
-  gem 'compass-rails' # you need this or you get an err
-  gem 'zurb-foundation', '~> 4.0.0'
-
-
+# Add Foundation Here
+gem 'compass-rails' # you need this or you get an err
+gem 'zurb-foundation', '~> 4.0.0'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '3.1.2'
+
+# Implement Devise with OmniAuth for Users and Authentication
+gem 'devise'
+gem 'omniauth-twitter'
+#gem 'omniauth-runkeeper'
+gem 'twitter'
+# Fix Devise to work with Rails 4.0+
+gem 'protected_attributes'
+# Use figaro to stash keys for dev and deployment
+gem 'figaro', '~> 0.7.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -50,13 +51,19 @@ gem 'bcrypt-ruby', '3.1.2'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
 
 # Set up dev group
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.8'
 
+  # Use Nifty Generators
+  # More info at https://github.com/ryanb/nifty-generators
+  gem 'nifty-generators'
   # Add RSpec for rails
   gem 'rspec-rails', '2.13.1'
 
@@ -86,3 +93,5 @@ group :production do
   #Enables serving assets in production and setting your logger to standard out
   gem 'rails_12factor', '0.0.2'
 end
+
+gem "mocha", group: :test
