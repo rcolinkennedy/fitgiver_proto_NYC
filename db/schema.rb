@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20131116001048) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "achievements", force: true do |t|
     t.string   "username"
     t.string   "pic_url"
@@ -27,7 +30,11 @@ ActiveRecord::Schema.define(version: 20131116001048) do
     t.integer  "comments_count"
   end
 
-ActiveRecord::Schema.define(version: 20131115192345) do
+  create_table "activities", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "desc"
+  end
 
   create_table "authentications", force: true do |t|
     t.integer  "user_id"
@@ -52,8 +59,7 @@ ActiveRecord::Schema.define(version: 20131115192345) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end
-
