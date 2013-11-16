@@ -6,14 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
     Achievement.destroy_all
-    Achievement.create([
-        { 
-            username: 'james',
-            pic_url: '/pic/jeffers',
-            title: 'Good Job',
-            message: 'That was a long one!',
-            points: 4,
-            time_ago: 32,
-            profile_url: '/profile/james',
-            url: '/achievements/66'
-        }])
+    Achievement.create( :username => 'james' )
+            # pic_url: '/pic/jeffers',
+            # title: 'Good Job',
+            # message: 'That was a long one!',
+            # points: 4,
+            # time_ago: 32,
+            # profile_url: '/profile/james',
+            # url: '/achievements/66'
