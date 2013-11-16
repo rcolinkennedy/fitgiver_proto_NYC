@@ -35,14 +35,18 @@ end
 
 
 
-  # Add Foundation Here
-  gem 'compass-rails' # you need this or you get an err
-  gem 'zurb-foundation', '~> 4.0.0'
-
-
+# Add Foundation Here
+gem 'compass-rails' # you need this or you get an err
+gem 'zurb-foundation', '~> 4.0.0'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '3.1.2'
+
+# Implement Devise with OmniAuth for Users and Authentication
+gem 'devise'
+gem 'omniauth-twitter'
+#gem 'omniauth-runkeeper'
+gem 'twitter'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -53,7 +57,10 @@ gem 'bcrypt-ruby', '3.1.2'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
 
 # Set up dev group
 group :development, :test do
