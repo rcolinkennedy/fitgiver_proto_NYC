@@ -4,7 +4,7 @@
   
   <div id="header" class="row">
     <div class="large-3 columns">
-      <h1><a href="#main-navigation"><%= image_tag "menu.png" , class:"hidebig" %></a><%= image_tag "fitgiver.png" , class:"hidesmall" %></h1>
+      <h1><a href="#navbar"><%= image_tag "menu.png" , class:"hidebig" %></a><%= image_tag "fitgiver.png" , class:"hidesmall" %></h1>
     </div>
     <div class="large-9 columns">
       <!--<ul class="inline-list right">
@@ -20,26 +20,122 @@
   
   
   <div class="row">    
-    
+  
     <!-- Main Feed -->
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
     <div class="large-9 push-3 columns">
-	   <%= render "shared/feed" %>
+    
+    
+    <!--<canvas id="myChart" style="width:100%; height="400"></canvas>-->
+    
+    
+    <!-- REMOVE BELOW ONCE THE ISSUE WITH THE DATABASE HAS BEEN RESOLVED-->
+    
+    <div class="itemcard">
+    <div class="row">
+        	<a href="">
+        	<div style="display:inline;">
+				<span style="display:inline;" class="comment_count"><%= image_tag "chatIcon.png" %> 50</span>
+			</div>
+			</a>
+			
+            <div class="large-2 columns small-3"><a href=""><%= image_tag "ArtistPic300x300.jpg" , :class => "circleWrap"%></a></div>
+            
+            <div class="large-10 columns">
+              <a href=""><p><strong class="name" style="display:inline">MAXIMUS's</strong><div class="achievement">Eating so much he now smells like tuna, We did it!!</div></p>
+              <p><div style="display:inline" class="points">1000 pts  |  </div><div class="timeago" style="display:inline;">5 mins</div></p>
+              </a>
+            </div>  
+            
+	</div>   
+    </div> 
+    
+        <hr />
+        
+        <div class="itemcard">
+    <div class="row">
+        	<a href="">
+        	<div style="display:inline;">
+				<span style="display:inline;" class="comment_count"><%= image_tag "chatIcon.png" %> 50</span>
+			</div>
+			</a>
+			
+            <div class="large-2 columns small-3"><a href=""><%= image_tag "ArtistPic300x300.jpg" , :class => "circleWrap"%></a></div>
+            
+            <div class="large-10 columns">
+              <a href=""><p><strong class="name" style="display:inline">MAXIMUS's</strong><div class="achievement">Eating so much he now smells like tuna, We did it!!</div></p>
+              <p><div style="display:inline" class="points">1000 pts  |  </div><div class="timeago" style="display:inline;">5 mins</div></p>
+              </a>
+            </div>  
+            
+	</div>   
+    </div> 
+    
+        <hr />
+        
+        
+        <div class="itemcard">
+    <div class="row">
+        	<a href="">
+        	<div style="display:inline;">
+				<span style="display:inline;" class="comment_count"><%= image_tag "chatIcon.png" %> 50</span>
+			</div>
+			</a>
+			
+            <div class="large-2 columns small-3"><a href=""><%= image_tag "ArtistPic300x300.jpg" , :class => "circleWrap"%></a></div>
+            
+            <div class="large-10 columns">
+              <a href=""><p><strong class="name" style="display:inline">MAXIMUS's</strong><div class="achievement">Eating so much he now smells like tuna, We did it!!</div></p>
+              <p><div style="display:inline" class="points">1000 pts  |  </div><div class="timeago" style="display:inline;">5 mins</div></p>
+              </a>
+            </div>  
+            
+	</div>   
+    </div> 
+    
+        <hr />
+        
+        
+        <div class="itemcard">
+    <div class="row">
+        	<a href="">
+        	<div style="display:inline;">
+				<span style="display:inline;" class="comment_count"><%= image_tag "chatIcon.png" %> 50</span>
+			</div>
+			</a>
+			
+            <div class="large-2 columns small-3"><a href=""><%= image_tag "ArtistPic300x300.jpg" , :class => "circleWrap"%></a></div>
+            
+            <div class="large-10 columns">
+              <a href=""><p><strong class="name" style="display:inline">MAXIMUS's</strong><div class="achievement">Eating so much he now smells like tuna, We did it!!</div></p>
+              <p><div style="display:inline" class="points">1000 pts  |  </div><div class="timeago" style="display:inline;">5 mins</div></p>
+              </a>
+            </div>  
+            
+	</div>   
+    </div> 
+    
+        <hr />
+        
+
+    <!-- REMOVE ABOVE ONCE THE ISSUE WITH THE DATABASE HAS BEEN RESOLVED-->
+    
+    
+    
+    	<%= render "shared/feed" %>
     </div>
     
     
     <!-- Nav Sidebar -->
     <!-- This is source ordered to be pulled to the left on larger screens -->
-    	<nav id="main-navigation" class="navigation">
     	<div class="large-3 pull-9 columns">
       	<ul class="side-nav">
         	<%= render "shared/menu" %>
       	</ul>
-      
+      	
+      	
       	<!--<p><img src="http://placehold.it/320x240&text=Ad" /></p>-->
     	</div>
-    	</nav>
-    
   </div>
     
   

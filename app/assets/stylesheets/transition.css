@@ -1,12 +1,6 @@
 div.large-3.pull-9.columns {
-    color: #414141;
-    background-color: #414141;
+    background-color: #494949;
     border-radius: 5px;
-}
-
-body
-{
-background-color:black;
 }
 
 .name
@@ -58,14 +52,9 @@ div.ui-btn-text.pnlBtnMain {
 }
 
 body{
-background: #131313;
-background: -moz-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #131313), color-stop(10%, #093332), color-stop(100%, #23cdcb));
-background: -webkit-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
-background: -o-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
-background: -ms-linear-gradient(top, #131313 0%, #093332 10%, #23cdcb 100%);
-background: linear-gradient(to bottom, #131313 0%, #093332 10%, #23cdcb 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#23cdcb', GradientType=0 );}
+background: #6c6c6c;
+
+}
 
 img.circleWrapSm.icn.panelIcon.profileimg {
     padding: 0px;
@@ -99,6 +88,55 @@ font-size: 11px;
 display:inline;
 }
 
+hr {
+    background-color: #6c6c6c;
+    border-color: #6c6c6c;
+}
+
+div.sponsor {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#navbar
+{
+    transition: width 0.3s ease;
+	opacity:1;
+}
+
+.itemcard {
+    border-style: solid;
+    border-color: #909090;
+    background-color: #909090;
+    color: #909090;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+img.circleWrap {
+    padding: 0px;
+    margin: 0px;
+}
+
+strong.name {
+    color: #cfcfcf;
+}
+
+div.achievement {
+    color: #cfcfcf;
+}
+
+div.points {
+    color: #cfcfcf;
+}
+
+div.timeago {
+    color: #cfcfcf;
+}
+
+
 
 @media only screen 
 and (min-width : 600px) {
@@ -112,5 +150,34 @@ and (max-width : 600px) {
 .hidesmall
 {	display:none;	}
 
+#navbar
+{
+	position:fixed;
+	width:80%;
+	left:-80%;
+	top:0px;
+	overflow:hidden;
+	transition: width 0.3s ease;
+	-webkit-transition: width 0.3s ease;
+	opacity:0;
+	height:100%;
+}
+
+#navbar:target
+{
+	display:inline;
+	//width:80%;
+	left:0px;
+	background-color: #494949;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+    -webkit-transition: left 0.3s ease;
+	opacity:1;
+	border-top-left-radius:0px;;
+}
 
 }
+
+
+
+

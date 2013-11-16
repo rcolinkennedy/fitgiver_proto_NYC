@@ -1,8 +1,10 @@
 <% @feed_entries.each do |entry| %>
     
     <% if entry.class == Achievement %>
+	        <div class="itemcard">
 
         <div class="row">
+        <div class="item">
         	<a href="<%= entry.url %>">
         	<div style="display:inline;">
 				<span style="display:inline;" class="comment_count"><%= image_tag "chatIcon.png" %> <%= entry.comments_count %></span>
@@ -16,7 +18,8 @@
             </div>
             
         </div>
-        
+    </div>
+    </div>
         <hr />
 <!-- 
       <div class="row">
