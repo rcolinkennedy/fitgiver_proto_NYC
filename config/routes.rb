@@ -1,10 +1,10 @@
 FitgiverProto::Application.routes.draw do
   resources :authentications
-  devise_for :users
-
-  # Route to janky signin page for testing authentications
-  root to: 'authentications#signin', path_names: {sign_in: "login"},
+  
+  devise_for :users, path_names: {sign_in: "login"},
     controllers: {omniauth_callbacks: "authentications", registrations: "registrations"}
+
+  root to: 'authentications#signin'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
