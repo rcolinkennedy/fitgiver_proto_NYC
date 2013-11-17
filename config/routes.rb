@@ -1,4 +1,6 @@
 FitgiverProto::Application.routes.draw do
+  resources :profiles
+
   get "achievement/list"
   get "home/index"
 
