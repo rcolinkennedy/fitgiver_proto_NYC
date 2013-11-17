@@ -1,0 +1,31 @@
+<h1>Listing settings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Daily email updates</th>
+      <th>Sharing default</th>
+      <th>Default share to twitter</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @settings.each do |setting| %>
+      <tr>
+        <td><%= setting.daily_email_updates %></td>
+        <td><%= setting.sharing_default %></td>
+        <td><%= setting.default_share_to_twitter %></td>
+        <td><%= link_to 'Show', setting %></td>
+        <td><%= link_to 'Edit', edit_setting_path(setting) %></td>
+        <td><%= link_to 'Destroy', setting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Setting', new_setting_path %>

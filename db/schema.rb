@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131117005256) do
+ActiveRecord::Schema.define(version: 20131117011315) do
 
   create_table "achievements", force: true do |t|
     t.string   "username"
@@ -48,6 +48,14 @@ ActiveRecord::Schema.define(version: 20131117005256) do
     t.string   "last_name"
     t.integer  "age"
     t.datetime "date_joined"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "settings", force: true do |t|
+    t.boolean  "daily_email_updates"
+    t.boolean  "sharing_default"
+    t.boolean  "default_share_to_twitter"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

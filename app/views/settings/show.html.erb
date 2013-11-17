@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Daily email updates:</strong>
+  <%= @setting.daily_email_updates %>
+</p>
+
+<p>
+  <strong>Sharing default:</strong>
+  <%= @setting.sharing_default %>
+</p>
+
+<p>
+  <strong>Default share to twitter:</strong>
+  <%= @setting.default_share_to_twitter %>
+</p>
+
+<%= link_to 'Edit', edit_setting_path(@setting) %> |
+<%= link_to 'Back', settings_path %>
