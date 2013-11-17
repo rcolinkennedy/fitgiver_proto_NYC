@@ -6,18 +6,13 @@ class AuthenticationsController < ApplicationController
      omni = request.env["omniauth.auth"]
      authentication = Authentication.find_by_provider_and_uid(omni['provider'], omni['uid'])
 
-     if current_user
-       token = omni['credentials'].token
-       token_secret = omni['credentials'].secret
-
-       current_user.authentications.create!(:provider => omni['provider'], :uid => omni['uid'], :token => token, :token_secret => token_secret)
+     if authentication
        flash[:notice] = "Authentication successful."
-       sign_in_and_redirect current_user
+       sign_in_and_redirect(:user, authentication.user)
      else
        user = User.new 
        user.apply_omniauth(omni)
-
-       if user.save
+                              if user.save
          flash[:notice] = "Logged in."
          sign_in_and_redirect User.find(user.id)             
        else
