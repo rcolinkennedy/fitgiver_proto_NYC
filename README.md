@@ -1,3 +1,9 @@
+## Archival notice
+
+This repository is kept for **historical / posterity** purposes only. It is **not maintained**, not security-audited, and **not intended for production use**.
+
+---
+
 #Fitgiver
 Prototype app for Fitgiver, for Bitgiver, Inc.
 
